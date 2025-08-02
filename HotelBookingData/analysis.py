@@ -31,3 +31,7 @@ df2.plot()
 # %%
 df.tail()
 # %%
+df.head()
+df
+
+# %%
