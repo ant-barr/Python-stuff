@@ -53,3 +53,15 @@ print(method3)
 # why is method 3 slightly different form the other two, its seems to just be rounded a bit.
 # the most accurate is method 3 because the other two rely on the stored approximation of math.e 15-16 digits
 
+# outputs
+
+# 523.6 cm^3
+# 523.6 cm^3
+
+# 1.0
+
+# 7.3890560989306495
+# 7.3890560989306495
+# 7.38905609893065
+
+
