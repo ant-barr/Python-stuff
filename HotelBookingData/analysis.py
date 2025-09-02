@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv('hotel-booking-data.txt', delimiter = '\t')
+df = pd.read_csv('/home/ant/Documents/projects/pandas-practice/HotelBookingData/hotel-booking-data.txt', delimiter = '\t')
 df.head()
 # %%
 df.dropna()
@@ -33,5 +33,4 @@ df.tail()
 # %%
 df.head()
 df
-
 # %%
