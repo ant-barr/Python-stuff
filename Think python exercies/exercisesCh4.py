@@ -111,6 +111,13 @@ draw_pie(5, 40)
 # exersie 5
 # make an appropriatley general set of functions that can draw flowers
 # Hint: use arc to write a function called petal that draws one flower petal
+"""
+Arc length: L = 2πr * (angle / 360)
+Arc ≈ n small lines → step length = L/n, step turn = angle/n
+Petal = 2 arcs, mirrored with turn (180 - angle)
+Flower = petals spaced evenly by 360/petals
+"""
+
 def polyline(n, length, angle):
     for i in range(n):
         forward(length)
