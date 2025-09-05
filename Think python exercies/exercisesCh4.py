@@ -102,9 +102,45 @@ def draw_pie(segments, length):
         triangle(length, 360/segments)
         left(180)
 
-make_turtle(delay=0.02)
+make_turtle(delay=0.2)
 draw_pie(5, 40)
 
+
+
+# %%
+# exersie 5
+# make an appropriatley general set of functions that can draw flowers
+# Hint: use arc to write a function called petal that draws one flower petal
+def polyline(n, length, angle):
+    for i in range(n):
+        forward(length)
+        left(angle)
+
+
+
+def arc(radius, angle):
+    arc_length = 2 * math.pi * radius * angle / 360
+    n = 30
+    length = arc_length / n
+    step_angle = angle / n
+    polyline(n, length, step_angle)
+
+
+def petal(length, angle):
+   for i in range(2):
+       arc(length, angle)
+       left(180-angle)
+
+make_turtle(delay = 0)
+petal(40, 60)
+
+def draw_flower(petals, length, angle):
+    for i in range(petals):
+        petal(length, angle)
+        left(360/petals)
+
+make_turtle(delay = 0.000002)
+draw_flower(20, 80, 45)
 
 
 # %%
