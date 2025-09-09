@@ -117,10 +117,9 @@ the function is recursive and once it has gone through the recursion, it goes ba
 
 """
 # %%
-
 '''
 Exercise 4:
-Draw a Koch curve with length x, doing this:
+Draw a Koch curve with length x, doing these:
     1. Draw a Koch curve with length x/3
     2. Turn left 60 degrees
     3. Draw a Koch curve with length x/3
@@ -152,4 +151,7 @@ def koch(x):
 
 make_turtle(delay = 0.02)
 koch(500)
-# %%
+# %i%
+'''
+this is me practising vim motions
+'''
